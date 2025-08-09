@@ -15,6 +15,7 @@ import { Loader2 } from "lucide-react";
 
 // Interface
 import { Product } from "@/interfaces/products.interface";
+import { productsArray } from "@/lib/utils";
 
 export default function Home() {
   const [isLoadingProducts, setIsLoadingProducts] = useState(false);
@@ -68,6 +69,16 @@ export default function Home() {
             />
           ))
         )}
+        {
+          products.length === 0 && (
+            productsArray.map(product => (
+              <ProductComponent 
+                key={product.id}
+                {...product}
+              />
+            ))
+          )
+        }
       </div>
     </div>
   );

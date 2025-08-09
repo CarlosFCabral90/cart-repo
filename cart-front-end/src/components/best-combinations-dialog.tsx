@@ -131,7 +131,7 @@ export const BestCombinationsDialog = ({ products }: {products: Product[]}) => {
                             Cancelar
                         </Button>
                         <Button
-                            disabled={!amount || Number.parseFloat(amount) <= 0}
+                            disabled={!amount || Number.parseFloat(amount) <= 0 || products.length === 0}
                             className="min-w-[100px]"
                             onClick={handleSubmit}
                         >
