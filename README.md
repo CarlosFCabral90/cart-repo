@@ -58,7 +58,7 @@ El frontend estará disponible en: `http://localhost:3000`
 ## 🔧 Tecnologías Utilizadas
 
 - **Backend**: Ruby, Sinatra
-- **Frontend**: JavaScript, HTML, CSS
+- **Frontend**: Next.Js, TypeScript Tailwind CSS, Shadcn
 - **Package Manager**: npm
 
 ## 📝 Resolución del Proyecto
