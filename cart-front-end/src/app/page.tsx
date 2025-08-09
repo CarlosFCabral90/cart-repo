@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     <div className="font-sans w-full flex flex-col min-h-screen p-8 pb-20 gap-8 sm:p-20">
-      <div className="w-full xl:w-3/5 xl:m-auto grid justify-start">
+      <div className="w-full mt-16 sm:mt-0 xl:w-3/5 xl:m-auto grid justify-start">
         <BestCombinationsDialog
           products={isLoadingProducts ? [] : products}
         />
