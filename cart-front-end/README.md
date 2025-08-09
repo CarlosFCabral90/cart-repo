@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PruebaTécnica CarlosCabral
 
-## Getting Started
+Proyecto de prueba técnica que incluye backend en Ruby con Sinatra y frontend en JavaScript.
 
-First, run the development server:
+## 📁 Estructura del Proyecto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+PruebaTecnica_CarlosCabral/
+├── cart-back-end/     # Backend - API REST en Ruby/Sinatra
+└── cart-front-end/    # Frontend - Aplicación web
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Instalación y Configuración
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Backend (Ruby/Sinatra)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Navegar a la carpeta del backend:
+   ```bash
+   cd cart-back-end
+   ```
 
-## Learn More
+2. Instalar las dependencias (si es necesario):
+   ```bash
+   bundle install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Ejecutar el servidor:
+   ```bash
+   ruby app.rb -p 4567
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+El backend estará disponible en: `http://localhost:4567`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Frontend
 
-## Deploy on Vercel
+1. Navegar a la carpeta del frontend:
+   ```bash
+   cd cart-front-end
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Instalar las dependencias:
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Crear .env con el siguiente url
+    ```
+    NEXT_PUBLIC_API_URL="http://localhost:4567"
+    ```
+
+4. Ejecutar el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+El frontend estará disponible en: `http://localhost:3000`
+
+## 🔧 Tecnologías Utilizadas
+
+- **Backend**: Ruby, Sinatra
+- **Frontend**: JavaScript, HTML, CSS
+- **Package Manager**: npm
+
+## 📝 Resolución del Proyecto
+
+### Desafíos Enfrentados
+- Lo pude realizar lo mas pronto posible ya que me encuentro trabajando provisoriamente en otro puesto no relacionado a la progracion el cual me acorta mucho mis horarios libres.
+
+- Es mi primer experiencia con Ruby lo cual fue muy interesante y devertida.
+
+- Lo envie al back como al front en el mismo repo cosa que no suelo hacer ya que me resulta mas conveniente por separado pero asi fueron las indicaciones.
+
+### Decisiones de Diseño
+- El diseño lo decidi hacer de esa manera ya que me parecio la mas conveniente por el corto plazo que cuento en mis dias fuera de lo laboral.
+
+### Funcionalidades Implementadas
+- Poder mostrar los productos disponibles.
+
+- Poder agregar al carrito productos seleccionados.
+
+- Visualizar correctamente los productos agregados al carrito.
+
+---
+
+*Desarrollado por Carlos Cabral*
